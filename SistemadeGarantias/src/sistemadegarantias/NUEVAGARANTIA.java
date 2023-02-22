@@ -1,3 +1,4 @@
+
 package sistemadegarantias;
 
  
@@ -481,8 +482,8 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                     String b = "";
                     while (rs.next()) {
                         /// a += rs.getString(1) + "" + rs.getString(4) + "" + rs.getInt(5) +" " + rs.getString(3)+ "\n;";
-                        a += rs.getString(5).trim() + " " + rs.getString(1).trim() + " " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
-                                + " " + rs.getString(2).trim() + "\n;";
+                        a += rs.getString(5).trim() + "    " + rs.getString(1).trim() + "          " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
+                            + "     " + rs.getString(2).trim() + "\n;";
                              b += rs.getString(7).trim()+"";
                    ///     System.out.println( rs.getString(7) + " "+ rs.getString(1) + " "  + rs.getString(4) +" $" + rs.getString(6));
                     }
@@ -530,7 +531,9 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                             + "y bajo las condiciones que estipula\n;"
                             + "el manual o instructivo del equipo\n;"
                             + "de los accesorios adquiridos      \n;"
+                            + "--------------------------------------\n;"
                             + "           CONDICIONES            \n;"
+                            + "--------------------------------------\n;"
                             + "1.-En todo caso el cliente debe   \n;"
                             + "presentar la mercancia con el ticket\n;"
                             + "de compra y empaques en buen estado \n;"
@@ -548,6 +551,24 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                             + "articulo,mala instalacion electrica\n;"
                             + "contingencias climaticas golpes,caidas\n;"
                             + "polvo, agua y plagas                \n;"
+                            + "5.-Si requiere asistencia técnica o \n;"
+                            + "garantías de aparatos con garantía \n;"
+                            + "Sounds y para una respuesta más \n;"
+                            + "rápida, debe acudir directamente \n;"
+                            + "a nuestro taller de servicio \n;"
+                            + "ubicado en Av. Antonio J. Bermúdez \n;"
+                            + "1550 entre Av. Tomás Fernández \n;"
+                            + "y calle Ohm, Parque industrial \n;"
+                            + "Antonio J. Bermúdez, en un horario \n;"
+                            + "de Lunes a Viernes de 9am a 1:30pm \n;"
+                            + "y de 3:00pm a 5:00pm, Sábados y \n;"
+                            + "Domingos cerrado, hacer cita \n;"
+                            + "previa al Tel 6161194 ext. 0, \n;"
+                            + "también puede acudir directamente \n;"
+                            + "a la sucursal donde le darán un \n;"
+                            + "tiempo de respuesta no mayor a 15 \n;"
+                            + "días hábiles. \n;"
+                            + "--------------------------------------\n;"
                             /*+ "5.-En el caso de este producto        \n;"
                              + "Casa de Musica  de Luxe S.A. de C.V.  \n;"
                              + "le enviara a su correo electronico    \n;"
@@ -562,7 +583,14 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                             + "EMAIL:" + JTCORREO.getText() + "\n;"
                             + "FIRMA:______________________________  \n;"
                             + "Recuerde que puede consultar nuestro  \n;"
-                            + "aviso de privacidad en WWW.SOUNDS.MX  \n;";
+                            + "aviso de privacidad en WWW.SOUNDS.MX  \n;"
+                            + "--------------------------------------\n;"
+                            + "15 DIAS DE GARANTIA EN ACCESORIOS, \n;"
+                            + "PRESENTANDO TICKET Y EMPAQUES \n;"
+                            + "EN BUEN ESTADO”, para conocer \n;"
+                            + "políticas de garantías de todos \n;"
+                            + "nuestros productos visite \n;"
+                            + "sounds.mx/garantías-y-devoluciones.\n;";
                     String zbill = h + amt + capricho;
                     FORMATOCELDAS p = new FORMATOCELDAS();
                     FORMATOCELDAS.printCard(zbill);//impresion #1 
@@ -648,8 +676,8 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                 
                         while (rs.next()) {
                           //  System.out.println(rs.getString(6)+"-"+rs.getString(1)+rs.getString(6)+""+rs.getString(7)+"");
-                            a += rs.getString(5).trim() + " " + rs.getString(1).trim() + " " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
-                                    + " " + rs.getString(2).trim() + "\n;";
+                            a += rs.getString(5).trim() + "    " + rs.getString(1).trim() + "          " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
+                            + "     " + rs.getString(2).trim() + "\n;";
                             b += rs.getString(7).trim()+"";
 
                        
@@ -680,7 +708,7 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                             
                         String h = Header + a;
                         String amt
-                                = "\n;--------------------------------------\n;"
+                                = "\n;----------------------------------------\n;"
                                 + "--------------------------------------\n;"
                                 + "NOTA;EL CLIENTE ESTA DE ACUERDO EN QUE\n;"
                                 + "LA MERCANCIA SE LE ENTREGO CON SUS\n;"
@@ -698,7 +726,9 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                                 + "y bajo las condiciones que estipula\n;"
                                 + "el manual o instructivo del equipo\n;"
                                 + "de los accesorios adquiridos      \n;"
+                                + "--------------------------------------\n;"
                                 + "           CONDICIONES            \n;"
+                                + "--------------------------------------\n;"
                                 + "1.-En todo caso el cliente debe   \n;"
                                 + "presentar la mercancia con el ticket\n;"
                                 + "de compra y empaques en buen estado \n;"
@@ -716,6 +746,24 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                                 + "articulo,mala instalacion electrica\n;"
                                 + "contingencias climaticas golpes,caidas\n;"
                                 + "polvo, agua y plagas                \n;"
+                                + "5.-Si requiere asistencia técnica o \n;"
+                                + "garantías de aparatos con garantía \n;"
+                                + "Sounds y para una respuesta más \n;"
+                                + "rápida, debe acudir directamente \n;"
+                                + "a nuestro taller de servicio \n;"
+                                + "ubicado en Av. Antonio J. Bermúdez \n;"
+                                + "1550 entre Av. Tomás Fernández \n;"
+                                + "y calle Ohm, Parque industrial \n;"
+                                + "Antonio J. Bermúdez, en un horario \n;"
+                                + "de Lunes a Viernes de 9am a 1:30pm \n;"
+                                + "y de 3:00pm a 5:00pm, Sábados y \n;"
+                                + "Domingos cerrado, hacer cita \n;"
+                                + "previa al Tel 6161194 ext. 0, \n;"
+                                + "también puede acudir directamente \n;"
+                                + "a la sucursal donde le darán un \n;"
+                                + "tiempo de respuesta no mayor a 15 \n;"
+                                + "días hábiles. \n;"
+                                + "--------------------------------------\n;"
                                 /*+ "5.-En el caso de este producto        \n;"
                                  + "Casa de Musica  de Luxe S.A. de C.V.  \n;"
                                  + "le enviara a su correo electronico    \n;"
@@ -730,7 +778,14 @@ public class NUEVAGARANTIA extends javax.swing.JFrame {
                                 + "EMAIL:" + JTCORREO.getText() + "\n;"
                                 + "FIRMA:______________________________  \n;"
                                 + "Recuerde que puede consultar nuestro  \n;"
-                                + "aviso de privacidad en WWW.SOUNDS.MX  \n;";
+                                + "aviso de privacidad en WWW.SOUNDS.MX  \n;"
+                                + "--------------------------------------\n;"
+                                + "15 DIAS DE GARANTIA EN ACCESORIOS, \n;"
+                                + "PRESENTANDO TICKET Y EMPAQUES \n;"
+                                + "EN BUEN ESTADO”, para conocer \n;"
+                                + "políticas de garantías de todos \n;"
+                                + "nuestros productos visite \n;"
+                                + "sounds.mx/garantías-y-devoluciones.\n;";
                         String zbill = h + amt+ capricho;
                         FORMATOCELDAS p = new FORMATOCELDAS();
                         FORMATOCELDAS.printCard(zbill);//impresion #1 

@@ -689,8 +689,8 @@ public class HISTORIAL extends javax.swing.JFrame {
                     String CAJERORS = "";
                     while (rs.next()) {
 
-                        a += rs.getString(5) + " " + rs.getString(1) + " " + rs.getString(4) + " $" + rs.getString(6) + "\n;"
-                                + " " + rs.getString(2) + "\n;";
+                        a += rs.getString(5).trim() + "    " + rs.getString(1).trim() + "          " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
+                            + "     " + rs.getString(2).trim() + "\n;";
                         CORREORS = rs.getString(10);
                         NOMBRECLIERS = rs.getString(8);
                         CAJERORS = rs.getString(7);
@@ -738,6 +738,24 @@ public class HISTORIAL extends javax.swing.JFrame {
                             + "articulo, mala instalacion electrica  \n;"
                             + "contingencias climaticas golpes       \n;"
                             + "caidas, polvo, agua y plagas\n;"
+                            + "5.-Si requiere asistencia técnica o \n;"
+                            + "garantías de aparatos con garantía \n;"
+                            + "Sounds y para una respuesta más \n;"
+                            + "rápida, debe acudir directamente \n;"
+                            + "a nuestro taller de servicio \n;"
+                            + "ubicado en Av. Antonio J. Bermúdez \n;"
+                            + "1550 entre Av. Tomás Fernández \n;"
+                            + "y calle Ohm, Parque industrial \n;"
+                            + "Antonio J. Bermúdez, en un horario \n;"
+                            + "de Lunes a Viernes de 9am a 1:30pm \n;"
+                            + "y de 3:00pm a 5:00pm, Sábados y \n;"
+                            + "Domingos cerrado, hacer cita \n;"
+                            + "previa al Tel 6161194 ext. 0, \n;"
+                            + "también puede acudir directamente \n;"
+                            + "a la sucursal donde le darán un \n;"
+                            + "tiempo de respuesta no mayor a 15 \n;"
+                            + "días hábiles. \n;"
+                            + "--------------------------------------\n;"
                       /*      + "5.-En el caso de este producto        \n;"
                             + "Casa de Musica  de Luxe S.A. de C.V.  \n;"
                             + "le dejara el codigo de sitio web con  \n;"
@@ -751,7 +769,14 @@ public class HISTORIAL extends javax.swing.JFrame {
                             + "EMAIL:" + CORREORS + "\n;"
                             + "FIRMA:______________________________  \n;"
                             + "Recuerde que puede consultar nuestro  \n;"
-                            + "aviso de privacidad en WWW.SOUNDS.MX  \n;";
+                            + "aviso de privacidad en WWW.SOUNDS.MX  \n;"
+                            + "15 DIAS DE GARANTIA EN ACCESORIOS, \n;"
+                            + "--------------------------------------\n;"
+                            + "PRESENTANDO TICKET Y EMPAQUES \n;"
+                            + "EN BUEN ESTADO”, para conocer \n;"
+                            + "políticas de garantías de todos \n;"
+                            + "nuestros productos visite \n;"
+                            + "sounds.mx/garantías-y-devoluciones.\n;";
                     //              JOptionPane.showMessageDialog(null,"VARIS"+NOMBRECLIERS+CORREORS);
 
                     String zbill = h + amt;

@@ -378,8 +378,8 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                         
                         while (rs.next()) {
 
-                            a += rs.getString(5) + " " + rs.getString(1) + " " + rs.getString(4) + " $" + rs.getString(6) + "\n;"
-                                    + " " + rs.getString(2) + "\n;";
+                            a += rs.getString(5).trim() + " " + rs.getString(1).trim() + " " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
+                                    + " " + rs.getString(2).trim() + "\n;";
                             CORREORS = rs.getString(10)+"";
                             NOMBRECLIERS = rs.getString(8)+"";
                             CAJERORS = rs.getString(7)+"";
@@ -412,6 +412,7 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                         String h = Header + a;
                         String amt
                                 = "\n;-----------------------------------\n;"
+                                + "           NOTA            \n;"
                                 + "--------------------------------------\n;"
                                 + "NOTA;EL CLIENTE ESTA DE ACUERDO EN QUE\n;"
                                 + "LA MERCANCIA SE LE ENTREGO CON SUS\n;"
@@ -429,7 +430,9 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                                 + "y bajo las condiciones que estipula\n;"
                                 + "el manual o instructivo del equipo\n;"
                                 + "de los accesorios adquiridos      \n;"
+                                + "--------------------------------------\n;"
                                 + "           CONDICIONES            \n;"
+                                + "--------------------------------------\n;"
                                 + "1.-En todo caso el cliente debe   \n;"
                                 + "presentar la mercancia con el ticket\n;"
                                 + "de compra y empaques en buen estado \n;"
@@ -447,6 +450,24 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                                 + "articulo,mala instalacion electrica\n;"
                                 + "contingencias climaticas golpes,caidas\n;"
                                 + "polvo, agua y plagas                \n;"
+                                + "5.-Si requiere asistencia técnica o "
+                                + "garantías de aparatos con garantía "
+                                + "Sounds y para una respuesta más "
+                                + "rápida, debe acudir directamente "
+                                + "a nuestro taller de servicio "
+                                + "ubicado en Av. Antonio J. Bermúdez "
+                                + "1550 entre Av. Tomás Fernández "
+                                + "y calle Ohm, Parque industrial "
+                                + "Antonio J. Bermúdez, en un horario "
+                                + "de Lunes a Viernes de 9am a 1:30pm "
+                                + "y de 3:00pm a 5:00pm, Sábados y "
+                                + "Domingos cerrado, hacer cita "
+                                + "previa al Tel 6161194 ext. 0, "
+                                + "también puede acudir directamente "
+                                + "a la sucursal donde le darán un "
+                                + "tiempo de respuesta no mayor a 15 "
+                                + "días hábiles."
+                                + "--------------------------------------\n;"
                                 /*+ "5.-En el caso de este producto        \n;"
                                  + "Casa de Musica  de Luxe S.A. de C.V.  \n;"
                                  + "le enviara a su correo electronico    \n;"
@@ -461,7 +482,16 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                                 + "EMAIL:" + CORREORS + "\n;"
                                 + "FIRMA:______________________________  \n;"
                                 + "Recuerde que puede consultar nuestro  \n;"
-                                + "aviso de privacidad en WWW.SOUNDS.MX  \n;";
+                                + "aviso de privacidad en WWW.SOUNDS.MX  \n;"
+                                + "--------------------------------------\n;"
+                                + "15 DIAS DE GARANTIA EN ACCESORIOS, "
+                                + "PRESENTANDO TICKET Y EMPAQUES "
+                                + "EN BUEN ESTADO”, para conocer "
+                                + "políticas de garantías de todos "
+                                + "nuestros productos visite "
+                                + "sounds.mx/garantías-y-devoluciones.";
+                                
+                        
                         
                          //      JOptionPane.showMessageDialog(null,"VARIS"+NOMBRECLIERS+CORREORS);
                         String zbill = h + amt+capricho;/// suma de header y cuerpo
@@ -537,8 +567,8 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                 String CAJERORS = "";
                 while (rs.next()) {
 
-                    a += rs.getString(5) + " " + rs.getString(1) + " " + rs.getString(4) + " $" + rs.getString(6) + "\n;"
-                            + " " + rs.getString(2) + "\n;";
+                    a += rs.getString(5).trim() + "    " + rs.getString(1).trim() + "          " + rs.getString(4).trim() + " $" + rs.getString(6).trim() + "\n;"
+                            + "     " + rs.getString(2).trim() + "\n;";
                     CORREORS = rs.getString(10)+"";
                     NOMBRECLIERS = rs.getString(8)+"";
                     CAJERORS = rs.getString(7)+"";
@@ -569,7 +599,7 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                 String h = Header + a;
 
                 String amt
-                        = "\n;-----------------------------------\n;"
+                        = "\n;--------------------------------------\n;"
                         + "--------------------------------------\n;"
                         + "NOTA;EL CLIENTE ESTA DE ACUERDO EN QUE\n;"
                         + "LA MERCANCIA SE LE ENTREGO CON SUS\n;"
@@ -587,7 +617,9 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                         + "y bajo las condiciones que estipula\n;"
                         + "el manual o instructivo del equipo\n;"
                         + "de los accesorios adquiridos      \n;"
+                        + "--------------------------------------\n;"
                         + "           CONDICIONES            \n;"
+                        + "--------------------------------------\n;"
                         + "1.-En todo caso el cliente debe   \n;"
                         + "presentar la mercancia con el ticket\n;"
                         + "de compra y empaques en buen estado \n;"
@@ -605,6 +637,24 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                         + "articulo,mala instalacion electrica\n;"
                         + "contingencias climaticas golpes,caidas\n;"
                         + "polvo, agua y plagas                \n;"
+                        + "5.-Si requiere asistencia técnica o \n;"
+                        + "garantías de aparatos con garantía \n;"
+                        + "Sounds y para una respuesta más \n;"
+                        + "rápida, debe acudir directamente \n;"
+                        + "a nuestro taller de servicio \n;"
+                        + "ubicado en Av. Antonio J. Bermúdez \n;"
+                        + "1550 entre Av. Tomás Fernández \n;"
+                        + "y calle Ohm, Parque industrial \n;"
+                        + "Antonio J. Bermúdez, en un horario \n;"
+                        + "de Lunes a Viernes de 9am a 1:30pm \n;"
+                        + "y de 3:00pm a 5:00pm, Sábados y \n;"
+                        + "Domingos cerrado, hacer cita \n;"
+                        + "previa al Tel 6161194 ext. 0, \n;"
+                        + "también puede acudir directamente \n;"
+                        + "a la sucursal donde le darán un \n;"
+                        + "tiempo de respuesta no mayor a 15 \n;"
+                        + "días hábiles. \n;"
+                        + "--------------------------------------\n;"
                         /*+ "5.-En el caso de este producto        \n;"
                          + "Casa de Musica  de Luxe S.A. de C.V.  \n;"
                          + "le enviara a su correo electronico    \n;"
@@ -619,7 +669,14 @@ public class MENUREIMPRIMIR extends javax.swing.JFrame {
                         + "EMAIL:" + CORREORS + "\n;"
                         + "FIRMA:______________________________  \n;"
                         + "Recuerde que puede consultar nuestro  \n;"
-                        + "aviso de privacidad en WWW.SOUNDS.MX  \n;";
+                        + "aviso de privacidad en WWW.SOUNDS.MX  \n;"
+                        + "--------------------------------------\n;"
+                        + "15 DIAS DE GARANTIA EN ACCESORIOS, \n;"
+                        + "PRESENTANDO TICKET Y EMPAQUES \n;"
+                        + "EN BUEN ESTADO”, para conocer \n;"
+                        + "políticas de garantías de todos \n;"
+                        + "nuestros productos visite \n;"
+                        + "sounds.mx/garantías-y-devoluciones.\n;";
                 //             JOptionPane.showMessageDialog(null,"VARIS"+NOMBRECLIERS+CORREORS);
               ///  System.out.println("<><><><><><><><>"+NOMBRECLIERS+CORREORS+CAJERORS);
                 String zbill = h + amt+capricho;/// suma de header y cuerpo
